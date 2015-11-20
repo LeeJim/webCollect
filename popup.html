@@ -1,22 +1,25 @@
 <!doctype html>
 <html>
-  <head>
-    <title>Getting Started Extension's Popup</title>
-    <style>
-      body { min-width: 357px; overflow-x: hidden; }
-	    img { margin: 5px; border: 2px solid black; vertical-align: middle; width: 75px; height: 75px; }
-	  </style>
-	
-    <!--
-      - JavaScript and HTML must be in separate files: see our Content Security
-      - Policy documentation[1] for details and explanation.
-      -
-      - [1]: http://developer.chrome.com/extensions/contentSecurityPolicy.html
-     -->
-	<script src="popup.js"></script>
-  </head>
-
-  <body>
-    <p>a simple tool to collect web</p>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <title>webCollect</title>
+  <style>
+    body { font-family: Microsoft YaHei;}
+    a { text-decoration: none; display: block; margin-top: 10px; text-align: center;}
+    #top { width: 363px; height: 67px; text-align: center; position: relative;}
+    /*#top:after { content: ""; display:block; height: 27px; width: 100%; position: absolute; top: 37px; right: 0; background: #000; z-index: 1;}*/
+    #lamp { display: inline-block; z-index: 9;}
+    #mainLink { color:#56abe4; width: 130px; margin: 10px auto;}
+    #mainLink:hover { background: #56abe4; color: #fff;}
+    #saveButton { background: #56abe4; color: #fff; width: 110px; height: 35px; line-height: 35px; border-radius: 2px; display: inline-block;}
+  </style>
+</head>
+<body>
+  <div id="top">
+    <img src="icon48.png" alt="lamp" id="lamp">
+    <a href="javascript:;" id="mainLink">WebCollect</a>
+    <a href="javascript:;" id="saveButton">保存此网页</a>
+  </div>
+</body>
+<script src="popup.js"></script>
 </html>
