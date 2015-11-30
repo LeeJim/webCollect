@@ -12,7 +12,5 @@
 		"default_icon": "icon48.png",
 		"default_popup": "popup.html"
 	},
-	"permissions": [
-		"http://api.flickr.com/"
-	]
+	"permissions": ["tabs"]
 }
